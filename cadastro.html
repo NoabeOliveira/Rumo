@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Rumo | Criar conta</title>
+
+    <link
+        rel="stylesheet"
+        href="cadastro.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <main class="pagina-cadastro">
+
+        <a href="acesso.html" class="logo-cadastro">
+            RUMO <span>➜</span>
+        </a>
+
+
+        <section class="cadastro-conteudo">
+
+            <div class="cadastro-texto">
+
+                <p class="cadastro-subtitulo">
+                    COMECE UMA NOVA JORNADA
+                </p>
+
+                <h1>
+                    CRIE SUA CONTA
+                    E ENCONTRE SEU
+                    <span>RUMO</span>
+                </h1>
+
+                <p class="cadastro-descricao">
+                    Crie sua conta para salvar destinos,
+                    organizar suas viagens e descobrir
+                    novas experiências pelo mundo.
+                </p>
+
+            </div>
+
+            <div class="cadastro-card">
+
+                <a
+                    href="acesso.html"
+                    class="voltar"
+                    aria-label="Voltar"
+                >
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+
+
+                <div class="cadastro-icone">
+                    <i class="fa-solid fa-plane"></i>
+                </div>
+
+
+                <h2>Crie sua conta</h2>
+
+                <p class="cadastro-card-descricao">
+                    Preencha seus dados para começar sua jornada.
+                </p>
+
+
+                <form id="formCadastro">
+                    <div class="campo">
+
+                        <label for="nome">
+                            Nome
+                        </label>
+
+                        <div class="input-container">
+
+                            <i class="fa-regular fa-user"></i>
+
+                            <input
+                                type="text"
+                                id="nome"
+                                placeholder="Seu nome"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                    <div class="campo">
+
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <div class="input-container">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="seu@email.com"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                    <div class="campo">
+
+                        <label for="senha">
+                            Senha
+                        </label>
+
+                        <div class="input-container">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="senha"
+                                placeholder="Crie uma senha"
+                                autocomplete="new-password"
+                                minlength="6"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="mostrar-senha"
+                                id="mostrarSenha"
+                                aria-label="Mostrar senha"
+                            >
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+                    <div class="campo">
+
+                        <label for="confirmarSenha">
+                            Confirmar senha
+                        </label>
+
+                        <div class="input-container">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="confirmarSenha"
+                                placeholder="Digite novamente"
+                                autocomplete="new-password"
+                                minlength="6"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn-cadastrar"
+                    >
+                        Criar conta
+                    </button>
+
+                </form>
+
+
+                <p class="possui-conta">
+                    Já possui uma conta?
+
+                    <a href="login.html">
+                        Entrar
+                    </a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="cadastro.js"></script>
+
+</body>
+
+</html>

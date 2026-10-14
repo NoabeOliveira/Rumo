@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Rumo | Minha conta</title>
+
+    <link
+        rel="stylesheet"
+        href="minha-conta.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+    <main class="pagina-conta">
+
+        <header class="conta-header">
+
+            <a
+                href="index.html"
+                class="logo-conta"
+            >
+                RUMO <span>➜</span>
+            </a>
+
+
+            <a
+                href="index.html"
+                class="voltar-inicio"
+            >
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Voltar para o início
+            </a>
+
+        </header>
+
+        <section class="conta-conteudo">
+
+
+            <div class="conta-card">
+
+                <div class="conta-icone">
+
+                    <i class="fa-regular fa-user"></i>
+
+                </div>
+
+
+                <h1>
+                    Minha conta
+                </h1>
+
+
+                <p class="conta-descricao">
+                    Gerencie suas informações pessoais.
+                </p>
+
+                <div class="dados-conta">
+
+                    <div class="campo-conta">
+
+                        <label for="contaNome">
+                            Nome
+                        </label>
+
+
+                        <div class="input-conta">
+
+                            <i class="fa-regular fa-user"></i>
+
+                            <input
+                                type="text"
+                                id="contaNome"
+                                readonly
+                            >
+
+                        </div>
+
+                    </div>
+
+                    <div class="campo-conta">
+
+                        <label for="contaEmail">
+                            E-mail
+                        </label>
+
+
+                        <div class="input-conta">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="contaEmail"
+                                readonly
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <button
+                    type="button"
+                    class="btn-editar-conta"
+                    id="btnEditarConta"
+                >
+
+                    <i class="fa-regular fa-pen-to-square"></i>
+
+                    Editar dados
+
+                </button>
+
+
+            </div>
+
+
+        </section>
+
+<section class="favoritos" id="meusFavoritos">
+
+    <div class="favoritos-cabecalho">
+
+        <div>
+            <p class="favoritos-subtitulo">
+                SEUS DESTINOS
+            </p>
+
+            <h2>
+                Meus favoritos
+                <i class="fa-regular fa-heart"></i>
+            </h2>
+
+            <p class="favoritos-descricao">
+                Os destinos que você salvar aparecerão aqui.
+            </p>
+        </div>
+
+    </div>
+
+    <div
+        class="favoritos-lista"
+        id="listaFavoritos"
+    >
+        <div
+            class="favoritos-vazio"
+            id="favoritosVazio"
+        >
+
+            <i class="fa-regular fa-heart"></i>
+
+            <h3>
+                Nenhum destino favorito ainda
+            </h3>
+
+            <p>
+                Explore os destinos da RUMO e salve
+                aqueles que você gostaria de conhecer.
+            </p>
+
+            <a
+                href="index.html#destinos"
+                class="btn-explorar"
+            >
+                Explorar destinos
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    </main>
+
+
+    <script src="minha-conta.js"></script>
+
+</body>
+</html>

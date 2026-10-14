@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7f8;
+    color: #14212b;
+    min-height: 100vh;
+}
+
+.confirmacao-header {
+    height: 85px;
+    padding: 0 7%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e7ebee;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 800;
+    color: #14212b;
+}
+
+.logo span {
+    color: #ff5a00;
+}
+
+.voltar-inicio {
+    color: #14212b;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.voltar-inicio:hover {
+    color: #ff5a00;
+}
+
+.confirmacao-container {
+    padding: 65px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.confirmacao-card {
+    width: 100%;
+    max-width: 650px;
+    background: #ffffff;
+    border: 1px solid #e7ebee;
+    border-radius: 22px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.04);
+}
+
+.icone-sucesso {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background: #e8f8ef;
+    color: #16a34a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.confirmacao-tag {
+    color: #ff5a00;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.confirmacao-card h1 {
+    font-size: 30px;
+    margin: 15px 0;
+    line-height: 1.3;
+}
+
+.confirmacao-descricao {
+    color: #65737d;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.numero-reserva {
+    background: #fff4ed;
+    border: 1px dashed #ffb58c;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.numero-reserva span {
+    font-size: 13px;
+    color: #65737d;
+}
+
+.numero-reserva strong {
+    font-size: 22px;
+    color: #ff5a00;
+    letter-spacing: 1px;
+}
+
+.detalhes-reserva {
+    text-align: left;
+    border: 1px solid #e7ebee;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.detalhes-reserva h2 {
+    font-size: 19px;
+    margin-bottom: 22px;
+}
+
+.detalhe-item,
+.detalhe-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 14px 0;
+    border-bottom: 1px solid #edf0f2;
+}
+
+.detalhe-item span,
+.detalhe-total span {
+    font-size: 14px;
+    color: #65737d;
+}
+
+.detalhe-item strong {
+    font-size: 14px;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.detalhe-total {
+    border-bottom: none;
+    padding-top: 22px;
+}
+
+.detalhe-total span {
+    font-weight: 700;
+    color: #14212b;
+}
+
+.detalhe-total strong {
+    font-size: 23px;
+    color: #ff5a00;
+}
+
+.aviso-demonstracao {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #65737d;
+    margin-bottom: 25px;
+}
+
+.aviso-demonstracao i {
+    color: #ff5a00;
+    margin-right: 5px;
+}
+
+.btn-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 18px;
+    background: #ff5a00;
+    color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-inicio:hover {
+    background: #e65000;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+
+    .confirmacao-header {
+        padding: 0 5%;
+        height: 75px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .voltar-inicio {
+        font-size: 12px;
+    }
+
+    .confirmacao-container {
+        padding: 30px 15px;
+    }
+
+    .confirmacao-card {
+        padding: 30px 20px;
+    }
+
+    .confirmacao-card h1 {
+        font-size: 24px;
+    }
+
+    .detalhes-reserva {
+        padding: 18px;
+    }
+
+    .detalhe-item strong {
+        max-width: 55%;
+    }
+
+    .detalhe-total strong {
+        font-size: 19px;
+    }
+}

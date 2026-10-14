@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Rumo | Finalizar reserva</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="checkout.css"
+    >
+
+</head>
+
+
+<body>
+
+    <main class="checkout">
+
+        <header class="checkout-header">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                RUMO <span>➜</span>
+            </a>
+
+            <a
+                href="index.html"
+                class="btn-voltar"
+            >
+                <i class="fa-solid fa-arrow-left"></i>
+                Voltar
+            </a>
+
+        </header>
+
+        <section class="checkout-conteudo">
+
+
+            <div class="checkout-formulario">
+
+                <p class="checkout-subtitulo">
+                    FINALIZE SUA VIAGEM
+                </p>
+
+                <h1>
+                    Dados da reserva
+                </h1>
+
+                <p class="checkout-descricao">
+                    Preencha seus dados para continuar
+                    com a reserva do seu pacote.
+                </p>
+
+                <div class="checkout-bloco">
+
+                    <h2>
+                        <span>1</span>
+                        Dados do viajante
+                    </h2>
+
+
+                    <div class="campo">
+
+                        <label for="nome">
+                            Nome completo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            placeholder="Digite seu nome completo"
+                        >
+
+                    </div>
+
+
+                    <div class="campos-linha">
+
+                        <div class="campo">
+
+                            <label for="email">
+                                E-mail
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="seu@email.com"
+                            >
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="telefone">
+                                Telefone
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="telefone"
+                                placeholder="(00) 00000-0000"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="checkout-bloco">
+
+                    <h2>
+                        <span>2</span>
+                        Dados da viagem
+                    </h2>
+
+
+                    <div class="campos-linha">
+
+                        <div class="campo">
+
+                            <label for="dataViagem">
+                                Data da viagem
+                            </label>
+
+                            <input
+                                type="date"
+                                id="dataViagem"
+                            >
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="viajantes">
+                                Viajantes
+                            </label>
+
+                            <select id="viajantes">
+
+                                <option value="1">
+                                    1 viajante
+                                </option>
+
+                                <option value="2">
+                                    2 viajantes
+                                </option>
+
+                                <option value="3">
+                                    3 viajantes
+                                </option>
+
+                                <option value="4">
+                                    4 viajantes
+                                </option>
+
+                                <option value="5">
+                                    5 viajantes
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="checkout-bloco">
+
+                    <h2>
+                        <span>3</span>
+                        Forma de pagamento
+                    </h2>
+
+
+                    <div class="formas-pagamento">
+
+                        <label class="pagamento-opcao">
+
+                            <input
+                                type="radio"
+                                name="pagamento"
+                                value="pix"
+                                checked
+                            >
+
+                            <i class="fa-brands fa-pix"></i>
+
+                            <div>
+                                <strong>PIX</strong>
+                                <small>Pagamento rápido</small>
+                            </div>
+
+                        </label>
+
+
+                        <label class="pagamento-opcao">
+
+                            <input
+                                type="radio"
+                                name="pagamento"
+                                value="credito"
+                            >
+
+                            <i class="fa-regular fa-credit-card"></i>
+
+                            <div>
+                                <strong>Cartão de crédito</strong>
+                                <small>Pagamento no cartão</small>
+                            </div>
+
+                        </label>
+
+
+                        <label class="pagamento-opcao">
+
+                            <input
+                                type="radio"
+                                name="pagamento"
+                                value="debito"
+                            >
+
+                            <i class="fa-solid fa-credit-card"></i>
+
+                            <div>
+                                <strong>Cartão de débito</strong>
+                                <small>Pagamento à vista</small>
+                            </div>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <aside class="resumo-compra">
+
+                <p class="resumo-subtitulo">
+                    SUA VIAGEM
+                </p>
+
+                <h2 id="resumoDestino">
+                    Maceió
+                </h2>
+
+                <p id="resumoPais">
+                    Brasil
+                </p>
+
+
+                <div class="resumo-linha">
+
+                    <span>
+                        Valor por pessoa
+                    </span>
+
+                    <strong id="valorPessoa">
+                        R$ 1.299
+                    </strong>
+
+                </div>
+
+
+                <div class="resumo-linha">
+
+                    <span>
+                        Viajantes
+                    </span>
+
+                    <strong id="quantidadeViajantes">
+                        1
+                    </strong>
+
+                </div>
+
+
+                <div class="resumo-divisor"></div>
+
+<div class="quantidade-viajantes">
+
+    <div class="viajantes-texto">
+        <span>Viajantes</span>
+        <small>Quantidade de pessoas</small>
+    </div>
+
+    <div class="controle-viajantes">
+
+        <button
+            type="button"
+            id="diminuir-viajantes"
+            aria-label="Diminuir quantidade de viajantes"
+        >
+            −
+        </button>
+
+        <span id="quantidade-viajantes">
+            1
+        </span>
+
+        <button
+            type="button"
+            id="aumentar-viajantes"
+            aria-label="Aumentar quantidade de viajantes"
+        >
+            +
+        </button>
+
+    </div>
+
+</div>
+
+
+                <div class="resumo-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="valorTotal">
+                        R$ 1.299
+                    </strong>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="btn-finalizar"
+                    id="btnFinalizar"
+                >
+
+                    Finalizar compra
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+                <p class="checkout-seguranca">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    Ambiente de demonstração.
+                    Nenhum pagamento real será realizado.
+
+                </p>
+
+            </aside>
+
+
+        </section>
+
+    </main>
+
+
+    <script src="checkout.js"></script>
+
+</body>
+
+</html>

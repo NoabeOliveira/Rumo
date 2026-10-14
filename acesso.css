@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #07141d;
+}
+.pagina-acesso {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 35px 7%;
+
+    display: flex;
+    flex-direction: column;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4, 18, 28, 0.88) 0%,
+            rgba(4, 18, 28, 0.62) 45%,
+            rgba(4, 18, 28, 0.35) 100%
+        ),
+        url("imagens/parisluv.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+.logo-acesso {
+    position: relative;
+    z-index: 2;
+
+    width: fit-content;
+
+    color: #ffffff;
+
+    font-size: 28px;
+    font-weight: 800;
+
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.logo-acesso span {
+    color: #ff6200;
+}
+.acesso-conteudo {
+    position: relative;
+    z-index: 2;
+
+    flex: 1;
+
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 420px;
+
+    align-items: center;
+    gap: 80px;
+}
+
+.acesso-texto {
+    max-width: 600px;
+
+    color: #ffffff;
+}
+
+.acesso-subtitulo {
+    margin-bottom: 12px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    letter-spacing: 6px;
+}
+
+.acesso-texto h1 {
+    margin-bottom: 22px;
+
+    font-size: clamp(52px, 7vw, 90px);
+    line-height: 0.95;
+
+    font-weight: 800;
+    letter-spacing: -3px;
+}
+
+.acesso-texto h1 span {
+    color: #ff6200;
+}
+
+.acesso-descricao {
+    max-width: 520px;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    font-size: 18px;
+    line-height: 1.6;
+}
+.acesso-card {
+    width: 100%;
+
+    padding: 42px 36px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.30);
+}
+
+.acesso-icone {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 98, 0, 0.15);
+
+    color: #ff6200;
+
+    font-size: 30px;
+}
+
+.acesso-card h2 {
+    margin-bottom: 10px;
+
+    color: #0d1821;
+
+    font-size: 28px;
+}
+
+.acesso-card > p {
+    margin-bottom: 30px;
+
+    color: #68727b;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.btn-acesso {
+    width: 100%;
+    min-height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.btn-entrar-acesso {
+    margin-bottom: 13px;
+
+    background: #ff6200;
+    color: #ffffff;
+
+    border: 2px solid #ff6200;
+}
+
+.btn-entrar-acesso:hover {
+    background: #e95800;
+    border-color: #e95800;
+
+    transform: translateY(-2px);
+}
+
+.btn-criar-conta {
+    background: transparent;
+    color: #0d1821;
+
+    border: 2px solid #d9dde1;
+}
+
+.btn-criar-conta:hover {
+    border-color: #ff6200;
+    color: #ff6200;
+
+    transform: translateY(-2px);
+}
+@media (max-width: 900px) {
+
+    .pagina-acesso {
+        padding: 28px 6%;
+    }
+
+    .acesso-conteudo {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        padding: 70px 0 50px;
+    }
+
+    .acesso-texto {
+        text-align: center;
+
+        margin: 0 auto;
+    }
+
+    .acesso-descricao {
+        margin: 0 auto;
+    }
+
+    .acesso-card {
+        max-width: 430px;
+
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .pagina-acesso {
+        padding: 24px 20px;
+
+        background-position: center;
+    }
+
+    .logo-acesso {
+        font-size: 24px;
+    }
+
+    .acesso-conteudo {
+        padding-top: 55px;
+
+        gap: 35px;
+    }
+
+    .acesso-subtitulo {
+        font-size: 12px;
+
+        letter-spacing: 4px;
+    }
+
+    .acesso-texto h1 {
+        font-size: 48px;
+
+        letter-spacing: -2px;
+    }
+
+    .acesso-descricao {
+        font-size: 16px;
+    }
+
+    .acesso-card {
+        padding: 32px 22px;
+
+        border-radius: 16px;
+    }
+
+    .acesso-card h2 {
+        font-size: 24px;
+    }
+
+}

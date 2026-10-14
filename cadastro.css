@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #07141d;
+}
+
+.pagina-cadastro {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 35px 7%;
+
+    display: flex;
+    flex-direction: column;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4, 18, 28, 0.90) 0%,
+            rgba(4, 18, 28, 0.65) 45%,
+            rgba(4, 18, 28, 0.38) 100%
+        ),
+        url("imagens/louvreP.JPG");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-cadastro {
+    width: fit-content;
+
+    color: #ffffff;
+
+    font-size: 28px;
+    font-weight: 800;
+
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.logo-cadastro span {
+    color: #ff6200;
+}
+
+.cadastro-conteudo {
+    flex: 1;
+
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 430px;
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+.cadastro-texto {
+    max-width: 620px;
+
+    color: #ffffff;
+}
+
+.cadastro-subtitulo {
+    margin-bottom: 14px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    letter-spacing: 6px;
+}
+
+.cadastro-texto h1 {
+    max-width: 650px;
+
+    margin-bottom: 22px;
+
+    font-size: clamp(45px, 5vw, 70px);
+    line-height: 0.98;
+
+    font-weight: 800;
+
+    letter-spacing: -3px;
+}
+
+.cadastro-texto h1 span {
+    color: #ff6200;
+}
+
+.cadastro-descricao {
+    max-width: 530px;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.cadastro-card {
+    position: relative;
+
+    width: 100%;
+
+    padding: 32px 36px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.30);
+}
+
+.voltar {
+    position: absolute;
+
+    top: 24px;
+    left: 25px;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #68727b;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.voltar:hover {
+    color: #ff6200;
+    background: #f4f4f4;
+}
+
+.cadastro-icone {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 98, 0, 0.15);
+
+    color: #ff6200;
+
+    font-size: 26px;
+}
+
+.cadastro-card h2 {
+    margin-bottom: 7px;
+
+    text-align: center;
+
+    color: #0d1821;
+
+    font-size: 26px;
+}
+
+.cadastro-card-descricao {
+    margin-bottom: 22px;
+
+    text-align: center;
+
+    color: #68727b;
+
+    font-size: 14px;
+}
+
+.campo {
+    margin-bottom: 14px;
+}
+
+.campo label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #27313a;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.input-container {
+    position: relative;
+
+    width: 100%;
+}
+
+.input-container > i {
+    position: absolute;
+
+    top: 50%;
+    left: 15px;
+
+    transform: translateY(-50%);
+
+    color: #899198;
+}
+
+.input-container input {
+    width: 100%;
+    height: 49px;
+
+    padding: 0 45px;
+
+    border: 1px solid #d9dde1;
+    border-radius: 9px;
+
+    outline: none;
+
+    color: #0d1821;
+
+    font-size: 15px;
+
+    background: #ffffff;
+
+    transition: 0.2s;
+}
+
+.input-container input:focus {
+    border-color: #ff6200;
+
+    box-shadow:
+        0 0 0 3px rgba(255, 98, 0, 0.10);
+}
+
+.mostrar-senha {
+    position: absolute;
+
+    top: 50%;
+    right: 14px;
+
+    transform: translateY(-50%);
+
+    border: none;
+
+    background: transparent;
+
+    color: #899198;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.mostrar-senha:hover {
+    color: #ff6200;
+}
+
+.btn-cadastrar {
+    width: 100%;
+    height: 52px;
+
+    margin-top: 6px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #ff6200;
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-cadastrar:hover {
+    background: #e95800;
+
+    transform: translateY(-2px);
+}
+
+.possui-conta {
+    margin-top: 20px;
+
+    text-align: center;
+
+    color: #68727b;
+
+    font-size: 14px;
+}
+
+.possui-conta a {
+    margin-left: 4px;
+
+    color: #ff6200;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.possui-conta a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+
+    .pagina-cadastro {
+        padding: 28px 6%;
+    }
+
+    .cadastro-conteudo {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        padding: 65px 0 50px;
+    }
+
+    .cadastro-texto {
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .cadastro-descricao {
+        margin: 0 auto;
+    }
+
+    .cadastro-card {
+        max-width: 430px;
+
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .pagina-cadastro {
+        padding: 24px 20px;
+    }
+
+    .logo-cadastro {
+        font-size: 24px;
+    }
+
+    .cadastro-conteudo {
+        padding-top: 50px;
+
+        gap: 35px;
+    }
+
+    .cadastro-subtitulo {
+        font-size: 12px;
+
+        letter-spacing: 4px;
+    }
+
+    .cadastro-texto h1 {
+        font-size: 41px;
+
+        letter-spacing: -2px;
+    }
+
+    .cadastro-descricao {
+        font-size: 16px;
+    }
+
+    .cadastro-card {
+        padding: 32px 22px;
+
+        border-radius: 16px;
+    }
+
+    .cadastro-card h2 {
+        font-size: 24px;
+    }
+}

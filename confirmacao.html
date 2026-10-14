@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Rumo | Reserva confirmada</title>
+
+    <link
+        rel="stylesheet"
+        href="confirmacao.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <header class="confirmacao-header">
+
+        <a href="index.html" class="logo">
+            RUMO <span>➜</span>
+        </a>
+
+        <a href="index.html" class="voltar-inicio">
+            <i class="fa-solid fa-house"></i>
+            Página inicial
+        </a>
+
+    </header>
+
+
+    <main class="confirmacao-container">
+
+        <section class="confirmacao-card">
+
+            <div class="icone-sucesso">
+
+                <i class="fa-solid fa-check"></i>
+
+            </div>
+
+
+            <span class="confirmacao-tag">
+                RESERVA REGISTRADA
+            </span>
+
+
+            <h1>
+                Sua viagem está confirmada!
+            </h1>
+
+            <p class="confirmacao-descricao">
+                Sua reserva de demonstração foi registrada
+                com sucesso. Confira abaixo os detalhes
+                da sua viagem.
+            </p>
+
+            <div class="numero-reserva">
+
+                <span>Número da reserva</span>
+
+                <strong id="numeroReserva">
+                    ---
+                </strong>
+
+            </div>
+            <div class="detalhes-reserva">
+
+                <h2>Detalhes da reserva</h2>
+
+
+                <div class="detalhe-item">
+
+                    <span>Destino</span>
+
+                    <strong id="confirmacaoDestino">
+                        ---
+                    </strong>
+
+                </div>
+
+
+                <div class="detalhe-item">
+
+                    <span>Viajante responsável</span>
+
+                    <strong id="confirmacaoNome">
+                        ---
+                    </strong>
+
+                </div>
+
+
+                <div class="detalhe-item">
+
+                    <span>Data da viagem</span>
+
+                    <strong id="confirmacaoData">
+                        ---
+                    </strong>
+
+                </div>
+
+
+                <div class="detalhe-item">
+
+                    <span>Quantidade de viajantes</span>
+
+                    <strong id="confirmacaoViajantes">
+                        ---
+                    </strong>
+
+                </div>
+
+
+                <div class="detalhe-item">
+
+                    <span>Forma de pagamento</span>
+
+                    <strong id="confirmacaoPagamento">
+                        ---
+                    </strong>
+
+                </div>
+
+
+                <div class="detalhe-total">
+
+                    <span>Valor total</span>
+
+                    <strong id="confirmacaoTotal">
+                        R$ 0,00
+                    </strong>
+
+                </div>
+
+            </div>
+
+            <p class="aviso-demonstracao">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                Esta é uma reserva de demonstração.
+                Nenhuma compra ou pagamento real
+                foi realizado.
+
+            </p>
+
+            <a href="index.html" class="btn-inicio">
+
+                Voltar para página inicial
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <script src="confirmacao.js"></script>
+
+</body>
+
+</html>

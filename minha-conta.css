@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f4f6f8;
+
+    color: #0d1821;
+}
+.pagina-conta {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 30px 7%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #07141d 0%,
+            #0d2533 45%,
+            #f4f6f8 45%,
+            #f4f6f8 100%
+        );
+}
+.conta-header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-conta {
+    color: #ffffff;
+
+    font-size: 28px;
+    font-weight: 800;
+
+    letter-spacing: -1px;
+
+    text-decoration: none;
+}
+
+.logo-conta span {
+    color: #ff6200;
+}
+
+.voltar-inicio {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 11px 16px;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #27313a;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.2s;
+}
+
+.voltar-inicio:hover {
+    color: #ff6200;
+
+    transform: translateY(-2px);
+}
+
+.conta-conteudo {
+    width: 100%;
+
+    min-height: calc(100vh - 100px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 0;
+}
+
+.conta-card {
+    width: 100%;
+    max-width: 520px;
+
+    padding: 42px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.18);
+}
+
+.conta-icone {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 98, 0, 0.14);
+
+    color: #ff6200;
+
+    font-size: 30px;
+}
+
+.conta-card h1 {
+    text-align: center;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+.conta-descricao {
+    margin-bottom: 32px;
+
+    text-align: center;
+
+    color: #68727b;
+
+    font-size: 15px;
+}
+
+.dados-conta {
+    width: 100%;
+}
+
+.campo-conta {
+    margin-bottom: 20px;
+}
+
+.campo-conta label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #27313a;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.input-conta {
+    position: relative;
+
+    width: 100%;
+}
+
+.input-conta i {
+    position: absolute;
+
+    top: 50%;
+    left: 16px;
+
+    transform: translateY(-50%);
+
+    color: #899198;
+}
+
+.input-conta input {
+    width: 100%;
+    height: 52px;
+
+    padding: 0 16px 0 45px;
+
+    border: 1px solid #d9dde1;
+    border-radius: 9px;
+
+    outline: none;
+
+    background: #f7f8f9;
+
+    color: #27313a;
+
+    font-size: 15px;
+}
+
+.btn-editar-conta {
+    width: 100%;
+    height: 52px;
+
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #ff6200;
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-editar-conta:hover {
+    background: #e95800;
+
+    transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+
+    .pagina-conta {
+        padding: 24px 20px;
+
+        background: #07141d;
+    }
+
+    .conta-header {
+        gap: 20px;
+    }
+
+    .logo-conta {
+        font-size: 24px;
+    }
+
+    .voltar-inicio {
+        padding: 10px 12px;
+
+        font-size: 13px;
+    }
+
+    .conta-conteudo {
+        padding: 40px 0;
+    }
+
+    .conta-card {
+        padding: 32px 22px;
+
+        border-radius: 16px;
+    }
+
+    .conta-card h1 {
+        font-size: 26px;
+    }
+}
+
+.favoritos {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 70px auto 0;
+    padding: 45px;
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.12);
+}
+
+.favoritos-cabecalho {
+    margin-bottom: 35px;
+}
+
+.favoritos-subtitulo {
+    margin-bottom: 8px;
+
+    color: #ff6200;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+}
+
+.favoritos-cabecalho h2 {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    color: #0d1821;
+
+    font-size: 32px;
+}
+
+.favoritos-cabecalho h2 i {
+    color: #ff6200;
+
+    font-size: 25px;
+}
+
+.favoritos-descricao {
+    margin-top: 8px;
+
+    color: #68727b;
+
+    font-size: 15px;
+}
+
+.favoritos-lista {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.favoritos-vazio {
+    grid-column: 1 / -1;
+
+    padding: 55px 25px;
+
+    text-align: center;
+
+    border: 2px dashed #dfe3e6;
+    border-radius: 16px;
+
+    background: #f8f9fa;
+}
+
+.favoritos-vazio > i {
+    margin-bottom: 18px;
+
+    color: #ff6200;
+
+    font-size: 42px;
+}
+
+.favoritos-vazio h3 {
+    margin-bottom: 10px;
+
+    color: #0d1821;
+
+    font-size: 20px;
+}
+
+.favoritos-vazio p {
+    max-width: 470px;
+
+    margin: 0 auto 25px;
+
+    color: #68727b;
+
+    line-height: 1.6;
+}
+
+.btn-explorar {
+    min-height: 48px;
+
+    padding: 0 25px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ff6200;
+    color: #ffffff;
+
+    border-radius: 9px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.btn-explorar:hover {
+    background: #e95800;
+
+    transform: translateY(-2px);
+}
+@media (max-width: 900px) {
+
+    .favoritos {
+        padding: 35px 25px;
+
+        margin-top: 45px;
+    }
+
+    .favoritos-lista {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+@media (max-width: 600px) {
+
+    .favoritos {
+        padding: 28px 18px;
+
+        border-radius: 16px;
+    }
+
+    .favoritos-cabecalho h2 {
+        font-size: 26px;
+    }
+
+    .favoritos-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .favoritos-vazio {
+        padding: 40px 18px;
+    }
+
+}

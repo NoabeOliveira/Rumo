@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #07141d;
+}
+
+.pagina-login {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 35px 7%;
+
+    display: flex;
+    flex-direction: column;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4, 18, 28, 0.90) 0%,
+            rgba(4, 18, 28, 0.65) 45%,
+            rgba(4, 18, 28, 0.38) 100%
+        ),
+        url("imagens/louvreP.JPG");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.logo-login {
+    width: fit-content;
+
+    color: #ffffff;
+
+    font-size: 28px;
+    font-weight: 800;
+
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.logo-login span {
+    color: #ff6200;
+}
+
+.login-conteudo {
+    flex: 1;
+
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 430px;
+
+    align-items: center;
+    gap: 80px;
+}
+
+.login-texto {
+    max-width: 620px;
+
+    color: #ffffff;
+}
+
+.login-subtitulo {
+    margin-bottom: 14px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    letter-spacing: 6px;
+}
+
+.login-texto h1 {
+    max-width: 650px;
+
+    margin-bottom: 22px;
+
+    font-size: clamp(48px, 5.5vw, 76px);
+    line-height: 0.98;
+
+    font-weight: 800;
+    letter-spacing: -3px;
+}
+
+.login-texto h1 span {
+    color: #ff6200;
+}
+
+.login-descricao {
+    max-width: 530px;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.login-card {
+    position: relative;
+
+    width: 100%;
+
+    padding: 38px 36px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.30);
+}
+.voltar {
+    position: absolute;
+
+    top: 25px;
+    left: 25px;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #68727b;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.voltar:hover {
+    color: #ff6200;
+    background: #f4f4f4;
+}
+
+.login-icone {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 98, 0, 0.15);
+
+    color: #ff6200;
+
+    font-size: 28px;
+}
+
+.login-card h2 {
+    margin-bottom: 8px;
+
+    text-align: center;
+
+    color: #0d1821;
+
+    font-size: 27px;
+}
+
+.login-card-descricao {
+    margin-bottom: 28px;
+
+    text-align: center;
+
+    color: #68727b;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #27313a;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.input-container {
+    position: relative;
+
+    width: 100%;
+}
+
+.input-container > i {
+    position: absolute;
+
+    top: 50%;
+    left: 15px;
+
+    transform: translateY(-50%);
+
+    color: #899198;
+}
+
+.input-container input {
+    width: 100%;
+    height: 52px;
+
+    padding: 0 45px;
+
+    border: 1px solid #d9dde1;
+    border-radius: 9px;
+
+    outline: none;
+
+    color: #0d1821;
+
+    font-size: 15px;
+
+    background: #ffffff;
+
+    transition: 0.2s;
+}
+
+.input-container input:focus {
+    border-color: #ff6200;
+
+    box-shadow:
+        0 0 0 3px rgba(255, 98, 0, 0.10);
+}
+.mostrar-senha {
+    position: absolute;
+
+    top: 50%;
+    right: 14px;
+
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+
+    color: #899198;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.mostrar-senha:hover {
+    color: #ff6200;
+}
+
+.opcoes-login {
+    margin: 5px 0 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    font-size: 13px;
+}
+
+.lembrar {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    color: #68727b;
+
+    cursor: pointer;
+}
+
+.lembrar input {
+    accent-color: #ff6200;
+}
+
+.opcoes-login a {
+    color: #ff6200;
+
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.opcoes-login a:hover {
+    text-decoration: underline;
+}
+.btn-login {
+    width: 100%;
+    height: 52px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #ff6200;
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-login:hover {
+    background: #e95800;
+
+    transform: translateY(-2px);
+}
+
+.criar-conta {
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: #68727b;
+
+    font-size: 14px;
+}
+
+.criar-conta a {
+    margin-left: 4px;
+
+    color: #ff6200;
+
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.criar-conta a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+
+    .pagina-login {
+        padding: 28px 6%;
+    }
+
+    .login-conteudo {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        padding: 65px 0 50px;
+    }
+
+    .login-texto {
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .login-descricao {
+        margin: 0 auto;
+    }
+
+    .login-card {
+        max-width: 430px;
+
+        margin: 0 auto;
+    }
+}
+@media (max-width: 500px) {
+
+    .pagina-login {
+        padding: 24px 20px;
+    }
+
+    .logo-login {
+        font-size: 24px;
+    }
+
+    .login-conteudo {
+        padding-top: 50px;
+
+        gap: 35px;
+    }
+
+    .login-subtitulo {
+        font-size: 12px;
+
+        letter-spacing: 4px;
+    }
+
+    .login-texto h1 {
+        font-size: 43px;
+
+        letter-spacing: -2px;
+    }
+
+    .login-descricao {
+        font-size: 16px;
+    }
+
+    .login-card {
+        padding: 34px 22px;
+
+        border-radius: 16px;
+    }
+
+    .login-card h2 {
+        font-size: 24px;
+    }
+
+    .opcoes-login {
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: 10px;
+    }
+}

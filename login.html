@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Rumo | Login</title>
+
+    <link
+        rel="stylesheet"
+        href="login.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <main class="pagina-login">
+        <a href="acesso.html" class="logo-login">
+            RUMO <span>➜</span>
+        </a>
+
+        <section class="login-conteudo">
+
+            <div class="login-texto">
+
+                <p class="login-subtitulo">
+                    BEM-VINDO DE VOLTA
+                </p>
+
+                <h1>
+                    SEU PRÓXIMO
+                    <span>RUMO</span>
+                    COMEÇA AQUI
+                </h1>
+
+                <p class="login-descricao">
+                    Entre na sua conta e continue explorando
+                    destinos, experiências e novas histórias.
+                </p>
+
+            </div>
+
+            <div class="login-card">
+
+                <a
+                    href="acesso.html"
+                    class="voltar"
+                    aria-label="Voltar"
+                >
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+
+                <div class="login-icone">
+                    <i class="fa-solid fa-plane"></i>
+                </div>
+
+                <h2>Bem-vindo à Rumo</h2>
+
+                <p class="login-card-descricao">
+                    Entre com seus dados para acessar sua conta.
+                </p>
+
+                <form id="formLogin">
+
+                    <div class="campo">
+
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <div class="input-container">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="seu@email.com"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="senha">
+                            Senha
+                        </label>
+
+                        <div class="input-container">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="senha"
+                                placeholder="Digite sua senha"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="mostrar-senha"
+                                id="mostrarSenha"
+                                aria-label="Mostrar senha"
+                            >
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="opcoes-login">
+
+                        <label class="lembrar">
+
+                            <input type="checkbox">
+
+                            <span>
+                                Lembrar de mim
+                            </span>
+
+                        </label>
+
+                        <a href="#">
+                            Esqueci minha senha
+                        </a>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn-login"
+                    >
+                        Entrar
+                    </button>
+
+                </form>
+
+
+                <p class="criar-conta">
+
+                    Ainda não tem uma conta?
+
+                    <a href="cadastro.html">
+                        Criar conta
+                    </a>
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="login.js"></script>
+    
+
+</body>
+
+</html>
